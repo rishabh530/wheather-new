@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <div class="weather-card">
+
+            <h1>🌤️ Weather App</h1>
+
+            <!-- Search Box -->
+            <form id="weatherForm" class="search-box">
+
+                <input
+                    type="text"
+                    id="cityInput"
+                    placeholder="Enter city name"
+                    required
+                >
+
+                <button type="submit">
+                    Search
+                </button>
+
+            </form>
+
+
+            <!-- Message -->
+            <p id="message">
+                Search for a city to see the weather.
+            </p>
+
+
+            <!-- Weather Information -->
+            <section id="weather" class="weather hidden">
+
+                <h2 id="city"></h2>
+
+
+                <div class="main-weather">
+
+                    <div id="icon" class="weather-icon">
+                        ☀️
+                    </div>
+
+                    <div>
+
+                        <div id="temperature" class="temperature">
+                            --°C
+                        </div>
+
+                        <p id="description">
+                            --
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Weather Details -->
+                <div class="details">
+
+                    <div>
+                        <span>💧</span>
+
+                        <strong id="humidity">
+                            --%
+                        </strong>
+
+                        <small>
+                            Humidity
+                        </small>
+                    </div>
+
+
+                    <div>
+                        <span>💨</span>
+
+                        <strong id="wind">
+                            -- m/s
+                        </strong>
+
+                        <small>
+                            Wind Speed
+                        </small>
+                    </div>
+
+
+                    <div>
+                        <span>🌡️</span>
+
+                        <strong id="feels">
+                            --°C
+                        </strong>
+
+                        <small>
+                            Feels Like
+                        </small>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
