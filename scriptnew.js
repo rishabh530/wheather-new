@@ -1,4 +1,4 @@
-const API_KEY = "e260c3146fe0bf6128c1df492b48e1ef";
+const API_KEY = "233d8fd87066536d45ae8068c8eab7a1";
 
 const form = document.getElementById("weatherForm");
 const cityInput = document.getElementById("cityInput");
@@ -11,7 +11,7 @@ form.addEventListener("submit", async (event) => {
   const cityName = cityInput.value.trim();
   if (!cityName) return;
 
-  if (API_KEY === "e260c3146fe0bf6128c1df492b48e1ef") {
+  if (API_KEY === "233d8fd87066536d45ae8068c8eab7a1") {
     showMessage("Please add your OpenWeatherMap API key in script.js");
     weather.classList.add("hidden");
     return;
